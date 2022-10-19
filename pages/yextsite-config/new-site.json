@@ -17,7 +17,13 @@
     "branches": [
       {
         "name": "main",
-        "isProductionBranch": true
+        "isProductionBranch": true,
+        "envVars": [
+          {
+            "key": "YEXT_PUBLIC_ENTITY_ID",
+            "value": "${{placeId}}"
+          }
+        ],
       }
     ]
   }
